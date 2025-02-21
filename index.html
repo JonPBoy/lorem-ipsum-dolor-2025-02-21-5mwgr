@@ -3,9 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lorem ipsum dolor</title>
     <meta name="description" content="Lorem ipsum dolor">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <body class="font-sans antialiased">
@@ -13,17 +22,26 @@
     <header class="fixed w-full bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100">
         <nav class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
-                <div class="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+                <a href="https://JonPBoy.github.io/lorem-ipsum-dolor-2025-02-21-5mwgr" class="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent hover:opacity-80 transition-opacity duration-300">
                     Logo
-                </div>
+                </a>
                 <div class="hidden md:flex space-x-8">
-                    <a href="#" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Features</a>
-                    <a href="#" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Benefits</a>
-                    <a href="#" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Contact</a>
+                    <a href="#features" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Features</a>
+                    <a href="#benefits" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Benefits</a>
+                    <a href="#contact" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Contact</a>
                 </div>
-                <button class="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-6 py-2 rounded-full hover:shadow-lg transform hover:scale-105 transition duration-300">
-                    Get Started
+                <button class="mobile-menu-button md:hidden" aria-label="Toggle mobile menu">
+                    <i class="fas fa-bars text-2xl text-gray-600"></i>
                 </button>
+                <a href="#get-started" class="hidden md:inline-block bg-gradient-to-r from-purple-600 to-pink-600 text-white px-6 py-2 rounded-full hover:shadow-lg transform hover:scale-105 transition duration-300">
+                    Get Started
+                </a>
+            </div>
+            <div class="mobile-menu hidden md:hidden mt-4 bg-white rounded-lg shadow-lg absolute left-0 right-0 p-4">
+                <a href="#features" class="block py-2 px-4 text-gray-600 hover:bg-gray-50 rounded transition duration-300">Features</a>
+                <a href="#benefits" class="block py-2 px-4 text-gray-600 hover:bg-gray-50 rounded transition duration-300">Benefits</a>
+                <a href="#contact" class="block py-2 px-4 text-gray-600 hover:bg-gray-50 rounded transition duration-300">Contact</a>
+                <a href="#get-started" class="block py-2 px-4 text-white bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg mt-2 text-center hover:shadow-lg transform hover:scale-105 transition duration-300">Get Started</a>
             </div>
         </nav>
     </header>
@@ -32,105 +50,232 @@
     <section class="pt-32 pb-24 bg-gradient-to-br from-purple-50 via-white to-pink-50">
         <div class="container mx-auto px-6">
             <div class="max-w-4xl mx-auto text-center">
-                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-8 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
-                    Lorem ipsum dolor
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-8 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent animate-fade-in">
+                    Transform Your Digital Experience
                 </h1>
                 <p class="text-xl text-gray-600 mb-12 leading-relaxed">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.
+                    Revolutionize your workflow with our cutting-edge platform. Boost productivity by 300% and reduce operational costs by up to 60%. Join over 10,000 satisfied customers who've already made the switch.
                 </p>
-                <a href="#" class="inline-block bg-gradient-to-r from-purple-600 to-pink-600 text-white text-lg font-semibold px-8 py-4 rounded-full hover:shadow-xl transform hover:scale-105 transition duration-300">
-                    Get Started Now
+                <a href="#get-started" class="inline-block bg-gradient-to-r from-purple-600 to-pink-600 text-white text-lg font-semibold px-8 py-4 rounded-full hover:shadow-xl transform hover:scale-105 transition duration-300">
+                    Start Your Free Trial
                 </a>
             </div>
         </div>
     </section>
 
     <!-- Features Section -->
-    <section class="py-24 bg-white">
+    <section id="features" class="py-24 bg-white">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Amazing Features</h2>
-                <p class="text-gray-600 max-w-2xl mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Enterprise-Grade Features</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Discover powerful tools designed to streamline your business operations and drive growth.</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Feature Card 1 -->
-                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition duration-300 border border-gray-100">
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition duration-300 border border-gray-100 transform hover:scale-102">
                     <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-6">
                         <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold mb-4">Feature 1</h3>
-                    <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h3 class="text-xl font-semibold mb-4">Advanced Analytics</h3>
+                    <p class="text-gray-600">Real-time insights and predictive modeling powered by AI. Track KPIs and make data-driven decisions with 99.9% accuracy.</p>
                 </div>
                 <!-- Feature Card 2 -->
-                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition duration-300 border border-gray-100">
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition duration-300 border border-gray-100 transform hover:scale-102">
                     <div class="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center mb-6">
                         <svg class="w-6 h-6 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold mb-4">Feature 2</h3>
-                    <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h3 class="text-xl font-semibold mb-4">Automated Workflows</h3>
+                    <p class="text-gray-600">Streamline operations with custom automation rules. Reduce manual tasks by 80% and eliminate human error.</p>
                 </div>
                 <!-- Feature Card 3 -->
-                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition duration-300 border border-gray-100">
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition duration-300 border border-gray-100 transform hover:scale-102">
                     <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-6">
                         <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold mb-4">Feature 3</h3>
-                    <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h3 class="text-xl font-semibold mb-4">Enterprise Security</h3>
+                    <p class="text-gray-600">Bank-grade encryption and compliance with GDPR, HIPAA, and SOC 2. Regular security audits ensure your data stays protected.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Benefits Section -->
-    <section class="py-24 bg-gradient-to-br from-purple-50 via-white to-pink-50">
+    <section id="benefits" class="py-24 bg-gradient-to-br from-purple-50 via-white to-pink-50">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Key Benefits</h2>
-                <p class="text-gray-600 max-w-2xl mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Transformative Benefits</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Experience measurable improvements across your entire organization.</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
                 <!-- Benefit 1 -->
-                <div class="flex items-start space-x-6">
+                <div class="flex items-start space-x-6 transform hover:scale-102 transition duration-300">
                     <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
                         <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                         </svg>
                     </div>
                     <div>
-                        <h3 class="text-xl font-semibold mb-2">Benefit 1</h3>
-                        <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <h3 class="text-xl font-semibold mb-2">Increased ROI</h3>
+                        <p class="text-gray-600">Average 300% return on investment within the first year. Our clients report $2M+ in annual savings through improved efficiency.</p>
                     </div>
                 </div>
                 <!-- Benefit 2 -->
-                <div class="flex items-start space-x-6">
+                <div class="flex items-start space-x-6 transform hover:scale-102 transition duration-300">
                     <div class="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center flex-shrink-0">
                         <svg class="w-6 h-6 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
                         </svg>
                     </div>
                     <div>
-                        <h3 class="text-xl font-semibold mb-2">Benefit 2</h3>
-                        <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <h3 class="text-xl font-semibold mb-2">Time Optimization</h3>
+                        <p class="text-gray-600">Save 20+ hours per week with automated workflows. Focus on strategic initiatives instead of repetitive tasks.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="py-24 bg-gradient-to-r from-purple-600 to-pink-600 text-white">
+    <!-- Testimonials Section -->
+    <section class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Customer Success Stories</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">See what our clients have to say about their transformation.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-102">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Implemented the platform last quarter and saw a 40% reduction in processing time. The automation features are game-changing."</p>
+                    <div class="border-t pt-4">
+                        <p class="font-semibold">Sarah Johnson</p>
+                        <p class="text-sm text-gray-500">CTO, TechCorp</p>
+                    </div>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-102">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 mb-4">"The analytics dashboard helped us identify key bottlenecks. ROI exceeded our expectations within 6 months."</p>
+                    <div class="border-t pt-4">
+                        <p class="font-semibold">Michael Chen</p>
+                        <p class="text-sm text-gray-500">Operations Director, GlobalTrade</p>
+                    </div>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-102">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Customer support is exceptional. They helped us customize the platform to our specific needs."</p>
+                    <div class="border-t pt-4">
+                        <p class="font-semibold">Emily Rodriguez</p>
+                        <p class="text-sm text-gray-500">Project Manager, InnovateX</p>
+                    </div>
+                </div>
+                <!-- Testimonial 4 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-102">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Security features give us peace of mind. Integration was smooth and the training resources are comprehensive."</p>
+                    <div class="border-t pt-4">
+                        <p class="font-semibold">David Smith</p>
+                        <p class="text-sm text-gray-500">Security Officer, SecureFlow</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="py-24 bg-gradient-to-br from-purple-50 via-white to-pink-50">
         <div class="container mx-auto px-6">
             <div class="max-w-3xl mx-auto text-center">
-                <h2 class="text-3xl md:text-4xl font-bold mb-8">Ready to Get Started?</h2>
-                <p class="text-xl mb-12 opacity-90">Join thousands of satisfied customers today.</p>
-                <a href="#" class="inline-block bg-white text-purple-600 text-lg font-semibold px-8 py-4 rounded-full hover:shadow-xl transform hover:scale-105 transition duration-300">
-                    Start Now
+                <h2 class="text-3xl md:text-4xl font-bold mb-8">Our Story</h2>
+                <div class="space-y-6 text-gray-600">
+                    <p class="leading-relaxed">
+                        Founded in 2020 by a team of industry veterans, we set out to revolutionize how businesses handle digital transformation. What started as a small startup in Silicon Valley has grown into a global leader in enterprise solutions, serving over 10,000 customers across 30 countries.
+                    </p>
+                    <p class="leading-relaxed">
+                        Our mission is to empower organizations with intelligent automation and data-driven insights. We believe in transparency, innovation, and customer success, which is why we maintain a 98% customer satisfaction rate and continue to invest heavily in R&D to stay ahead of industry trends.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Frequently Asked Questions</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Find answers to common questions about our platform.</p>
+            </div>
+            <div class="max-w-3xl mx-auto space-y-6">
+                <!-- FAQ Item 1 -->
+                <div class="border border-gray-200 rounded-lg p-6 hover:shadow-md transition duration-300">
+                    <h3 class="text-xl font-semibold mb-3">How long does implementation typically take?</h3>
+                    <p class="text-gray-600">Most clients are fully operational within 2-4 weeks. Our dedicated implementation team provides comprehensive support throughout the process, including data migration, training, and customization.</p>
+                </div>
+                <!-- FAQ Item 2 -->
+                <div class="border border-gray-200 rounded-lg p-6 hover:shadow-md transition duration-300">
+                    <h3 class="text-xl font-semibold mb-3">What security measures are in place?</h3>
+                    <p class="text-gray-600">We employ bank-grade encryption, regular security audits, and comply with GDPR, HIPAA, and SOC 2. All data is stored in secure, redundant data centers with 24/7 monitoring.</p>
+                </div>
+                <!-- FAQ Item 3 -->
+                <div class="border border-gray-200 rounded-lg p-6 hover:shadow-md transition duration-300">
+                    <h3 class="text-xl font-semibold mb-3">Can I integrate with existing systems?</h3>
+                    <p class="text-gray-600">Yes, our platform offers native integration with over 100 popular business tools and APIs for custom integrations. Our team can assist with specific integration requirements.</p>
+                </div>
+                <!-- FAQ Item 4 -->
+                <div class="border border-gray-200 rounded-lg p-6 hover:shadow-md transition duration-300">
+                    <h3 class="text-xl font-semibold mb-3">What kind of support is included?</h3>
+                    <p class="text-gray-600">All plans include 24/7 technical support, regular training sessions, and access to our knowledge base. Enterprise clients receive dedicated account managers.</p>
+                </div>
+                <!-- FAQ Item 5 -->
+                <div class="border border-gray-200 rounded-lg p-6 hover:shadow-md transition duration-300">
+                    <h3 class="text-xl font-semibold mb-3">How do you handle data backup?</h3>
+                    <p class="text-gray-600">We perform automated backups every 4 hours with 30-day retention. Enterprise clients can opt for custom backup schedules and longer retention periods.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-24 bg-gradient-to-r from-purple-600 to-pink-600 text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10" style="background-image: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1920&q=80'); background-size: cover;"></div>
+        <div class="container mx-auto px-6 relative">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-8">Ready to Transform Your Business?</h2>
+                <p class="text-xl mb-12 opacity-90">Join over 10,000 companies already benefiting from our platform. Start your free 30-day trial today.</p>
+                <a href="#get-started" class="inline-block bg-white text-purple-600 text-lg font-semibold px-8 py-4 rounded-full hover:shadow-xl transform hover:scale-105 transition duration-300">
+                    Start Free Trial
                 </a>
             </div>
         </div>
@@ -141,24 +286,24 @@
         <div class="container mx-auto px-6 py-12">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div class="col-span-1 md:col-span-2">
-                    <div class="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent mb-4">
+                    <a href="https://JonPBoy.github.io/lorem-ipsum-dolor-2025-02-21-5mwgr" class="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent hover:opacity-80 transition-opacity duration-300 mb-4 inline-block">
                         Logo
-                    </div>
-                    <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </a>
+                    <p class="text-gray-600 mb-4">Empowering businesses with intelligent automation and data-driven insights since 2020.</p>
                 </div>
                 <div>
-                    <h4 class="text-sm font-semibold uppercase tracking-wider text-gray-900 mb-4">Links</h4>
+                    <h4 class="text-sm font-semibold uppercase tracking-wider text-gray-900 mb-4">Quick Links</h4>
                     <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">About</a></li>
-                        <li><a href="#" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Features</a></li>
-                        <li><a href="#" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Contact</a></li>
+                        <li><a href="#features" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Features</a></li>
+                        <li><a href="#benefits" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Benefits</a></li>
+                        <li><a href="https://JonPBoy.github.io/lorem-ipsum-dolor-2025-02-21-5mwgr/blog.html" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Blog</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="text-sm font-semibold uppercase tracking-wider text-gray-900 mb-4">Legal</h4>
                     <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Privacy</a></li>
-                        <li><a href="#" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Terms</a></li>
+                        <li><a href="https://JonPBoy.github.io/lorem-ipsum-dolor-2025-02-21-5mwgr/privacy.html" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="https://JonPBoy.github.io/lorem-ipsum-dolor-2025-02-21-5mwgr/terms.html" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Terms of Service</a></li>
                     </ul>
                 </div>
             </div>
@@ -167,5 +312,36 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+</body>
 </body>
 </html>
